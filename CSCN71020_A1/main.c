@@ -19,8 +19,10 @@ int main (void) {
 	{
 	case 1:
 		add();
+		break;
 	case 2:
 		sub();
+		break;
 	}
 
 }
@@ -32,12 +34,11 @@ void printWelcomeMenu() {
 	printf(" **********************\n");
 }
 
-void printOptions() {
+	void printOptions() {
 	printf("1. Add\n");
 	printf("2. Subtract\n");
 }
-
-void add() {
+	void add() {
 	double num1, num2, result;
 	printf("Enter the first value:");
 	scanf_s("%lf", &num1);
@@ -45,7 +46,9 @@ void add() {
 	scanf_s("%lf", &num2);
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
-}
+	return 0;
+	}
+
 void sub() {
 	double num1, num2, result2;
 	printf("Enter the first value: ");
